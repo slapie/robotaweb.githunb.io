@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="https://pic.chinesefontdesign.com/uploads/2015/07/053.gif" alt="logo" style="width:70px;">
+  </a>
+  
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+<!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <button type="button" class="btn btn-outline-warning">Новости</button>
+	<button type="button" class="btn btn-outline-warning">Аниме новое</button>
+	<button type="button" class="btn btn-outline-warning">Аниме старое</button>
+	<button type="button" class="btn btn-outline-warning">Обратная связь</button>
+	<button type="button" class="btn btn-outline-warning">Рассылка</button>
+    </ul>
+  </div>
+
+<div class="container">
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+    Регестрация
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Регестрация/Вход</h4>
+          <button type="button" class="close margin-right" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+
+        </div>
+		<div class="container">
+          <form class="form-inline" role="form">
+    
+           <input type="text" class="form-control mb-10 mr-sm-10" id="email2" placeholder="Твоя почта сюды">
+    
+           <input type="text" class="form-control mb-10 mr-sm-10" id="pwd2" placeholder="Твой паоль сюды">
+           <div class="form-check mb-2 mr-sm-2">
+           <label class="form-check-label">
+        
+           </label>
+         </div>    
+        <button type="button" class="btn btn-outline-warning">Вход</button>
+        </form>
+       </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+</nav>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid mx-auto d-block" src="https://images8.alphacoders.com/850/thumb-1920-850986.jpg" alt="Стальной Алхимик" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3><p class="text-danger">Стальной Алхимик</p></h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid mx-auto d-block" src="https://images5.alphacoders.com/104/1041799.png" alt="Тетрадь смерти" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Тетрадь смерти</h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid mx-auto d-block"  src="https://wallpaperaccess.com/full/1089253.jpg" alt="Джо-Джо" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Джо-Джо</h3>
+        
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div class="container">
+  <h2>Донатеры месяца</h2>
+  <p>:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Никнейм</th>
+        <th>Oпыт</th>
+        <th>Сума</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+      <tr class="table-danger">
+        <td><strong><p class="text-light">Lipricon</strong></td>
+        <td>Оверанимешник</td>
+        <td><strong>666$</p></strong></td>
+      </tr>
+      <tr class="table-warning">
+        <td><p class="text-primary"><strong>ninja</strong></td>
+        <td>Тарелка супа</td>
+        <td>598$</p></td>
+      </tr>
+      <tr class="table-warning">
+        <td><p class="text-primary"><strong>Danger</strong></td>
+        <td>Лампочка импотент</td>
+        <td>400$</p></td>
+      </tr>
+      <tr class="table-success">
+        <td><p class="text-danger"><strong>naruto228</strong></td>
+        <td>Розоволосая доска</td>
+        <td>90$</p></td>
+      </tr>
+      <tr class="table-success">
+        <td><p class="text-danger"><strong>Warning</strong></td>
+        <td>Тарелка супа</td>
+        <td>40$</p></td>
+      </tr>
+      <tr class="table-success">
+        <td><p class="text-danger"><strong>Jo_Jo</strong></td>
+        <td>Оверанимешник</td>
+        <td>10$</p></td>
+      </tr>
+      <tr class="table-primary">
+        <td><p class="text-danger"><strong>Kunay</strong></td>
+        <td>Розовая доска</td>
+        <td>1$</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h1 class="display-1">Cмотри на этой неделе</h1> 
+
+</div>
+<div class="container">
+
+  <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong><h1>Дитя погоды</h1></strong> 
+	<img class="img-fluid" src="https://kinoafisha.ua/upload/2019/09/films/8988/207n3ow5ditya-pogod.jpg" alt="Дитя погоды" width="1400" height="2014">
+	<div class="container">
+  
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Смотреть</button>
+    <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Добавить в избраные</a>
+      <a class="dropdown-item" href="#">Создать новый плейлист</a>
+        <a class="dropdown-item" href="#">11111</a>
+        <a class="dropdown-item" href="#">11111</a>
+    </div>
+  </div>
+</div>
+  </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong><h1>Твоё имя</h1></strong> 
+	<img class="img-fluid" src="https://cs9.pikabu.ru/post_img/2017/09/11/10/1505148670151582535.jpg" alt="Твоё имя" width="1400" height="1647">
+	<div class="container">
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Смотреть</button>
+    <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Добавить в избраные</a>
+      <a class="dropdown-item" href="#">Создать новый плейлист</a>
+    </div>
+  </div>
+</div>
+  </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong><h1>Дети моря</h1></strong> 
+	<img class="img-fluid" src="https://animelove.ru/wp-content/uploads/2020/02/1582035413_a1095s1580431572156866-1.jpg" alt="Дети моря" width="1400" height="1700">
+      <div class="btn-group">
+    <button type="button" class="btn btn-danger">Смотреть</button>
+    <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Добавить в избраные</a>
+      <a class="dropdown-item" href="#">Создать новый плейлист</a>
+    </div>
+   </div>
+  </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong><h1>Дьявол тоже может плакать</h1></strong> 
+	<img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/ru/5/50/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5-%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%29.jpg" alt="Дьявол тоже может плакать" width="1400" height="1564">
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Смотреть</button>
+    <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Добавить в избраные</a>
+      <a class="dropdown-item" href="#">Создать новый плейлист</a>
+    </div>
+  </div>
+  </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong><h1>Черная лагуна</h1></strong> 
+	<img class="img-fluid" src="https://www.animeonline.cc/uploads/posts/2019-06/medium/1559389962_001.jpg" alt="Черная лагуна" width="1400" height="1578">
+	  
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Смотреть</button>
+    <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Добавить в избраные</a>
+      <a class="dropdown-item" href="#">Создать новый плейлист</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
